@@ -47,7 +47,7 @@ export default function ProjectDetail() {
         <Img src={p.image} alt={`${p.title} screenshot`} label={p.title} className="mt-14 aspect-[16/8] w-full rounded-[2rem] border border-line" />
         {c ? (
           <div className="mt-14 pb-24">
-            {c.draft && <p className="mb-4 rounded-xl border border-line bg-ink-800 px-4 py-3 text-sm text-mist">Draft: review every section and rewrite it with your own experience before publishing.</p>}
+            {c.draft && <p className="mb-4 rounded-xl border border-line bg-ink-800 px-4 py-3 text-sm text-mist">I worked with a team of six: one hustler, two hipsters, and three hackers. I was one of the hackers (the coders) on this project.</p>}
             <Block n={1} title="Overview"><p>{c.overview}</p><p className="mt-4 text-mist">Role: {p.role}</p></Block>
             <Block n={2} title="Problem Statement"><p>{c.problem}</p></Block>
             <Block n={3} title="Objectives"><List items={c.objectives} /></Block>
